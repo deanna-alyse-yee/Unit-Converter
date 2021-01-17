@@ -22,6 +22,23 @@ class Unit_ConverterTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testConvertMilesToKilometers(){
+        XCTAssert(Units.convertMilesToKilometers(mi: 47) == 75.6392)
+
+    }
+    
+    func testConvertKilometersToMiles(){
+        XCTAssert(Units.convertKilometersToMiles(km: 75.6392) == 47)
+    }
+    
+    func testConvertPoundsToKilograms(){
+        XCTAssert(Units.convertPoundsToKilograms(lb: 22) == 9.97903)
+    }
+    
+    func testConvertKilogramsToPounds(){
+        XCTAssert(Units.convertKilogramsToPounds(kg: 9.97903) == 22)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

@@ -15,6 +15,8 @@
 		F7090EC225B243DC00631206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7090EC025B243DC00631206 /* LaunchScreen.storyboard */; };
 		F7090ECD25B243DC00631206 /* Unit_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7090ECC25B243DC00631206 /* Unit_ConverterTests.swift */; };
 		F7090ED825B243DC00631206 /* Unit_ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7090ED725B243DC00631206 /* Unit_ConverterUITests.swift */; };
+		F780845325B2A5D20087250C /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780845225B2A5D20087250C /* Units.swift */; };
+		F780845A25B2A6810087250C /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780845225B2A5D20087250C /* Units.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		F7090ED325B243DC00631206 /* Unit ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit ConverterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7090ED725B243DC00631206 /* Unit_ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_ConverterUITests.swift; sourceTree = "<group>"; };
 		F7090ED925B243DC00631206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F780845225B2A5D20087250C /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +102,11 @@
 		F7090EB425B243DB00631206 /* Unit Converter */ = {
 			isa = PBXGroup;
 			children = (
+				F780845925B2A5FC0087250C /* view */,
+				F780845825B2A5F10087250C /* controller */,
+				F780845725B2A5E50087250C /* model */,
 				F7090EB525B243DB00631206 /* AppDelegate.swift */,
 				F7090EB725B243DB00631206 /* SceneDelegate.swift */,
-				F7090EB925B243DB00631206 /* ViewController.swift */,
 				F7090EBB25B243DB00631206 /* Main.storyboard */,
 				F7090EBE25B243DC00631206 /* Assets.xcassets */,
 				F7090EC025B243DC00631206 /* LaunchScreen.storyboard */,
@@ -126,6 +131,29 @@
 				F7090ED925B243DC00631206 /* Info.plist */,
 			);
 			path = "Unit ConverterUITests";
+			sourceTree = "<group>";
+		};
+		F780845725B2A5E50087250C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F780845225B2A5D20087250C /* Units.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F780845825B2A5F10087250C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7090EB925B243DB00631206 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F780845925B2A5FC0087250C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7090EBA25B243DB00631206 /* ViewController.swift in Sources */,
+				F780845325B2A5D20087250C /* Units.swift in Sources */,
 				F7090EB625B243DB00631206 /* AppDelegate.swift in Sources */,
 				F7090EB825B243DB00631206 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F780845A25B2A6810087250C /* Units.swift in Sources */,
 				F7090ECD25B243DC00631206 /* Unit_ConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
